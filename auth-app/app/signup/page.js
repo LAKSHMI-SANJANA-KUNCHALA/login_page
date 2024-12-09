@@ -55,14 +55,19 @@ export default function SignUp() {
       <div className={styles.container}>
         <h1 className={styles.title}>Sign Up</h1>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
+          <label htmlFor="username" className={styles.label}>Username:</label>
           <input
+            id="username"
             name="username"
             placeholder="Username"
             onChange={handleChange}
             className={styles.inputField}
             required
           />
+
+          <label htmlFor="email" className={styles.label}>Email:</label>
           <input
+            id="email"
             name="email"
             type="email"
             placeholder="Email"
@@ -70,7 +75,10 @@ export default function SignUp() {
             className={styles.inputField}
             required
           />
+
+          <label htmlFor="password" className={styles.label}>Password:</label>
           <input
+            id="password"
             name="password"
             type="password"
             placeholder="Password"
@@ -78,6 +86,7 @@ export default function SignUp() {
             className={styles.inputField}
             required
           />
+
           {passwordError && <p className={styles.error}>{passwordError}</p>}
           <button type="submit" className={styles.submitButton}>
             Sign Up

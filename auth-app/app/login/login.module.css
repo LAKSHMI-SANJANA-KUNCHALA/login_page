@@ -67,6 +67,12 @@
   color: #2575fc;
   font-weight: bold;
 }
+.error {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
 
 .signupButton:hover {
   text-decoration: underline;
